@@ -1,3 +1,5 @@
+import 'package:digisafe_app/Authentication%20screens/signup.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -92,14 +94,27 @@ class LoginPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Don't have an account?"),
-                    Text(
-                      " Sign up",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18,
-                      ),
-                    )
+                    Text("Don't have an account? "),
+                    //Making the Login text clickable
+                    RichText(
+                        text: TextSpan(
+                            style: TextStyle(
+                                fontWeight: FontWeight.w600, fontSize: 18),
+                            children: <TextSpan>[
+                          TextSpan(
+                              text: 'SignUp',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 18,
+                                  color: Colors.blueAccent),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => SignupPage()));
+                                }),
+                        ]))
                   ],
                 ),
                 Container(
@@ -107,7 +122,7 @@ class LoginPage extends StatelessWidget {
                   height: 200,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/.png"),
+                        image: AssetImage("assets/avatarlogin.png"),
                         fit: BoxFit.fitHeight),
                   ),
                 )

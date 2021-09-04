@@ -1,6 +1,7 @@
 // ignore: unused_import
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:digisafe_app/Authentication screens/login.dart';
 
 class SignupPage extends StatelessWidget {
   @override
@@ -91,11 +92,26 @@ class SignupPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text("Already have an account?"),
-                  Text(
-                    " Login",
-                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
-                  )
+                  Text("Already have an account? "),
+                  RichText(
+                      text: TextSpan(
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 18),
+                          children: <TextSpan>[
+                        TextSpan(
+                            text: 'Login',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18,
+                                color: Colors.blueAccent),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => LoginPage()));
+                              }),
+                      ]))
                 ],
               ),
             ],
