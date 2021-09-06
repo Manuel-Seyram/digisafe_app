@@ -51,6 +51,10 @@ flutter:
     - assets/avatarlogin.png
     - assets/avatarwelcome.jpg
     - assets/avatarsignup.png
+    - assets/creditcards.png
+    - assets/passport.png
+    - assets/nationaliD.png
+    - assets/driverslicense.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

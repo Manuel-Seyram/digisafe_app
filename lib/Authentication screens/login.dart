@@ -1,4 +1,5 @@
 import 'package:digisafe_app/Authentication%20screens/signup.dart';
+import 'package:digisafe_app/Main%20menu/Mainmenu.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -74,7 +75,12 @@ class LoginPage extends StatelessWidget {
                     child: MaterialButton(
                       minWidth: double.infinity,
                       height: 60,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Dashboard()));
+                      },
                       color: Color(0xff0095FF),
                       elevation: 0,
                       shape: RoundedRectangleBorder(
