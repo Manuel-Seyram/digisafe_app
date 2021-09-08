@@ -30,10 +30,11 @@ class _SplashScreen2State extends State<SplashScreen2>
       body: Column(
         children: <Widget>[
           Text(
-            "Welcome to DigiSafe, ",
+            "Welcome to DigiSafe ",
             style: TextStyle(
                 color: Colors.white,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w400,
+                fontFamily: 'Lato',
                 fontStyle: FontStyle.italic,
                 fontSize: 20.0),
           ),
@@ -66,7 +67,7 @@ class _SplashScreen2State extends State<SplashScreen2>
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic,
-                    fontSize: 15.0),
+                    fontSize: 12.0),
               ),
               Expanded(
                   flex: 1,
@@ -79,8 +80,16 @@ class _SplashScreen2State extends State<SplashScreen2>
                               MaterialPageRoute(
                                   builder: (context) => Dashboard()));
                         },
-                        label: Text("Next"),
-                        icon: Icon(Icons.arrow_forward_ios_sharp),
+                        label: Text("Next",
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.lightBlueAccent,
+                            )),
+                        icon: Icon(
+                          Icons.arrow_forward_ios_sharp,
+                          size: 20.0,
+                          color: Colors.lightBlueAccent,
+                        ),
                       )))
             ],
           ))

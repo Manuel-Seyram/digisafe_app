@@ -27,9 +27,10 @@ class HomePage extends StatelessWidget {
                   Text(
                     "Welcome to DigiSafe, ",
                     style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w700,
                       fontSize: 30,
-                      fontStyle: FontStyle.italic,
+                      fontFamily: 'Lato',
+                      fontStyle: FontStyle.normal,
                     ),
                   ),
                   SizedBox(
