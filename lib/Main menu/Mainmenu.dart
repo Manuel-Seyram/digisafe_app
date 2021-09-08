@@ -25,7 +25,7 @@ class Dashboard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(18.0),
               child: Text(
-                "Select an Option",
+                "Select an Option To Get started",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 25.0,
