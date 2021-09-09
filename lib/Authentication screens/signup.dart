@@ -34,6 +34,15 @@ class SignupPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //creating fields for the sign up form.
             children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(top: 10),
+                height: 110,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/avatarsignup.png"),
+                      fit: BoxFit.fitHeight),
+                ),
+              ),
               Column(
                 children: <Widget>[
                   Text(
@@ -56,7 +65,6 @@ class SignupPage extends StatelessWidget {
                 children: <Widget>[
                   inputFile(label: "Username"),
                   inputFile(label: "Email"),
-                  inputFile(label: "Mobile number"),
                   inputFile(label: "Password", obscureText: true),
                   inputFile(label: "Confirm Password ", obscureText: true),
                 ],

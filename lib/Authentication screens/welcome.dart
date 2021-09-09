@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 30,
-                      fontFamily: 'Lato',
+                      fontFamily: 'Schyler',
                       fontStyle: FontStyle.normal,
                     ),
                   ),

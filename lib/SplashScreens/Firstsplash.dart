@@ -29,6 +29,9 @@ class _SplashScreenState extends State<SplashScreen>
       resizeToAvoidBottomInset: true,
       body: Column(
         children: <Widget>[
+          SizedBox(
+            height: 20.0,
+          ),
           Lottie.asset(
             'assets/digisafe.json',
             controller: _controller,
@@ -43,12 +46,15 @@ class _SplashScreenState extends State<SplashScreen>
                     ));
             },
           ),
-          Padding(padding: EdgeInsets.only(top: 10.0)),
+          SizedBox(
+            height: 20.0,
+          ),
           Text(
             "DigiSafe",
             style: TextStyle(
                 color: Colors.white,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w400,
+                fontFamily: 'Schyler',
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0),
           )

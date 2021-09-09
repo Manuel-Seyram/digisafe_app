@@ -30,13 +30,13 @@ class _SplashScreen2State extends State<SplashScreen2>
       body: Column(
         children: <Widget>[
           Text(
-            "Welcome to DigiSafe ",
+            "Welcome to DigiSafe, ",
             style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w400,
-                fontFamily: 'Lato',
+                fontFamily: 'Schyler',
                 fontStyle: FontStyle.italic,
-                fontSize: 20.0),
+                fontSize: 25.0),
           ),
           SizedBox(
             height: 30.0,
@@ -65,7 +65,8 @@ class _SplashScreen2State extends State<SplashScreen2>
                 "Your secure digital identification holder",
                 style: TextStyle(
                     color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w200,
+                    fontFamily: 'Schyler',
                     fontStyle: FontStyle.italic,
                     fontSize: 12.0),
               ),
@@ -75,14 +76,13 @@ class _SplashScreen2State extends State<SplashScreen2>
                       alignment: Alignment.bottomCenter,
                       child: TextButton.icon(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Dashboard()));
+                          Navigator.of(context).push(_createRoute());
                         },
                         label: Text("Next",
                             style: TextStyle(
                               fontSize: 20.0,
+                              fontFamily: 'Schyler',
+                              fontWeight: FontWeight.w300,
                               color: Colors.lightBlueAccent,
                             )),
                         icon: Icon(
@@ -98,4 +98,23 @@ class _SplashScreen2State extends State<SplashScreen2>
       backgroundColor: Colors.black,
     );
   }
+}
+
+//Animation transition to next page
+Route _createRoute() {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => Dashboard(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      const begin = Offset(0.0, 1.0);
+      const end = Offset.zero;
+      const curve = Curves.ease;
+
+      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+      return SlideTransition(
+        position: animation.drive(tween),
+        child: child,
+      );
+    },
+  );
 }

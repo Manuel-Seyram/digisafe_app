@@ -10,31 +10,23 @@ class Dashboard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Icon(
-                    Icons.sort_rounded,
-                    color: Colors.black,
-                    size: 52.0,
-                  ),
-                ],
-              ),
-            ),
-            Padding(
               padding: const EdgeInsets.all(18.0),
               child: Text(
                 "Select an Option To Get started",
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 25.0,
+                  fontSize: 22.0,
+                  fontFamily: 'Schyler',
+                  fontStyle: FontStyle.italic,
                 ),
                 textAlign: TextAlign.start,
               ),
             ),
+            SizedBox(
+              height: 50.0,
+            ),
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(60.0),
               child: Center(
                 child: Wrap(
                   spacing: 20,
