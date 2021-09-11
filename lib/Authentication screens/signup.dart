@@ -1,167 +1,181 @@
-// ignore: unused_import
-import 'package:digisafe_app/SplashScreens/signupSplashscreen.dart';
-import 'package:flutter/gestures.dart';
+import 'package:digisafe_app/Authentication%20screens/otp.dart';
 import 'package:flutter/material.dart';
-import 'package:digisafe_app/Authentication screens/login.dart';
 
-class SignupPage extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
+  @override
+  _SignUpScreenState createState() => _SignUpScreenState();
+}
+
+class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: Icon(
-            Icons.arrow_back_ios,
-            size: 20,
-            color: Colors.black,
+      body: ListView(
+        children: <Widget>[
+          BackButtonWidget(),
+          SizedBox(
+            height: 20,
           ),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 40),
-          height: MediaQuery.of(context).size.height - 50,
-          width: double.infinity,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //creating fields for the sign up form.
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(top: 10),
-                height: 110,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/avatarsignup.png"),
-                      fit: BoxFit.fitHeight),
-                ),
-              ),
-              Column(
-                children: <Widget>[
-                  Text(
-                    "Sign up",
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    "Create an account, It's free ",
-                    style: TextStyle(fontSize: 15, color: Colors.grey[700]),
-                  )
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  inputFile(label: "Username"),
-                  inputFile(label: "Email"),
-                  inputFile(label: "Password", obscureText: true),
-                  inputFile(label: "Confirm Password ", obscureText: true),
-                ],
-              ),
-              Container(
-                padding: EdgeInsets.only(top: 3, left: 3),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    border: Border(
-                      bottom: BorderSide(color: Colors.black),
-                      top: BorderSide(color: Colors.black),
-                      left: BorderSide(color: Colors.black),
-                      right: BorderSide(color: Colors.black),
-                    )),
-                child: MaterialButton(
-                  minWidth: double.infinity,
-                  height: 60,
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => SplashScreen2()));
-                  },
-                  color: Color(0xff0095FF),
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  child: Text(
-                    "Sign up",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 18,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text("Already have an account? "),
-                  RichText(
-                      text: TextSpan(
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Row(
+              children: <Widget>[
+                IconButton(icon: Icon(Icons.mail), onPressed: null),
+                Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(right: 20, left: 10),
+                        child: TextField(
+                          decoration: InputDecoration(hintText: 'Email'),
+                        )))
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Row(
+              children: <Widget>[
+                IconButton(icon: Icon(Icons.person), onPressed: null),
+                Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(right: 20, left: 10),
+                        child: TextField(
+                          decoration: InputDecoration(hintText: 'Username'),
+                        )))
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Row(
+              children: <Widget>[
+                IconButton(icon: Icon(Icons.phone), onPressed: null),
+                Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(right: 20, left: 10),
+                        child: TextField(
+                          decoration: InputDecoration(hintText: 'phone number'),
+                        )))
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Row(
+              children: <Widget>[
+                IconButton(icon: Icon(Icons.lock), onPressed: null),
+                Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(right: 20, left: 10),
+                        child: TextField(
+                          decoration: InputDecoration(hintText: 'Password'),
+                        )))
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: <Widget>[
+                Radio(value: null, groupValue: null, onChanged: null),
+                RichText(
+                    text: TextSpan(
+                        text: 'I have accepted the',
+                        style: TextStyle(color: Colors.black),
+                        children: [
+                      TextSpan(
+                          text: 'Terms & Condition',
                           style: TextStyle(
-                              fontWeight: FontWeight.w600, fontSize: 18),
-                          children: <TextSpan>[
-                        TextSpan(
-                            text: 'Login',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18,
-                                color: Colors.blueAccent),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => LoginPage()));
-                              }),
-                      ]))
-                ],
-              ),
-            ],
+                              color: Colors.blueGrey,
+                              fontWeight: FontWeight.bold))
+                    ]))
+              ],
+            ),
           ),
-        ),
+          SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(5),
+              child: Container(
+                height: 60,
+                child: RaisedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Otp()));
+                  },
+                  color: Colors.blueAccent,
+                  child: Text(
+                    'SIGN UP',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 }
 
-// we will be creating a widget for text field
-Widget inputFile({label, obscureText = false}) {
-  return Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: <Widget>[
-      Text(
-        label,
-        style: TextStyle(
-            fontSize: 15, fontWeight: FontWeight.w400, color: Colors.black87),
-      ),
-      SizedBox(
-        height: 5,
-      ),
-      TextField(
-        obscureText: obscureText,
-        decoration: InputDecoration(
-            contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: (Colors.grey[400])!),
+class BackButtonWidget extends StatelessWidget {
+  const BackButtonWidget({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 200,
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover, image: AssetImage('assets/newauth.jpg'))),
+      child: Positioned(
+          child: Stack(
+        children: <Widget>[
+          Positioned(
+              top: 20,
+              child: Row(
+                children: <Widget>[
+                  IconButton(
+                      icon: Icon(
+                        Icons.arrow_back_ios,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      }),
+                  Text(
+                    'Back',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  )
+                ],
+              )),
+          Positioned(
+            bottom: 20,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Create New Account',
+                style: TextStyle(
+                    color: Colors.black38,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18),
+              ),
             ),
-            border: OutlineInputBorder(
-                borderSide: BorderSide(color: (Colors.grey[400])!))),
-      ),
-      SizedBox(
-        height: 10,
-      )
-    ],
-  );
+          )
+        ],
+      )),
+    );
+  }
 }

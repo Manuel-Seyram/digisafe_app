@@ -55,6 +55,8 @@ flutter:
     - assets/creditcards.png
     - assets/passport.png
     - assets/nationaliD.png
+    - assets/newauth.jpg
+    - assets/otp.png
     - assets/driverslicense.png
     - assets/digisafe.json
     - assets/lf30_editor_znzfprgp.json
