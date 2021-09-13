@@ -34,6 +34,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   lottie: ^0.7.0+1
+  google_fonts: ^0.2.0
   
 
 # For information on the generic Dart part of this file, see the
@@ -57,10 +58,13 @@ flutter:
     - assets/nationaliD.png
     - assets/newauth.jpg
     - assets/otp.png
+    - assets/healthid.png
+    - assets/voters.png
+    - assets/workid.png
     - assets/driverslicense.png
+    - assets/back.jpg
     - assets/digisafe.json
     - assets/lf30_editor_znzfprgp.json
-    - assets/new/digiid.json
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
