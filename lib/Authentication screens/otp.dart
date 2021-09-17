@@ -157,6 +157,7 @@ class _OtpState extends State<Otp> {
   Widget _textFieldOTP({required bool first, last}) {
     return Container(
       height: 85,
+      width: 50,
       child: AspectRatio(
         aspectRatio: 1.0,
         child: TextField(

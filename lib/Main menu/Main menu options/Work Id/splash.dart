@@ -30,7 +30,7 @@ class _Splashid6State extends State<Splashid6> with TickerProviderStateMixin {
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 20.0,
+            height: 70.0,
           ),
           Text(
             "Please Select to scan card. ",

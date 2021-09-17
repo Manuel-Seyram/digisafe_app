@@ -30,7 +30,7 @@ class _Splashid4State extends State<Splashid4> with TickerProviderStateMixin {
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 20.0,
+            height: 70.0,
           ),
           Text(
             "Please Select to scan Passport.",

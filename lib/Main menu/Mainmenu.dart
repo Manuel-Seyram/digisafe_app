@@ -3,8 +3,8 @@ import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Drivers%20License
 import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Health%20Insurance/splash.dart';
 import 'package:digisafe_app/Main%20menu/Main%20menu%20options/National%20Id/splash.dart';
 import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Passport/splash.dart';
-import 'package:digisafe_app/Main%20menu/Voters%20Id/splash.dart';
-import 'package:digisafe_app/Main%20menu/Work%20Id/splash.dart';
+import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Voters%20Id/splash.dart';
+import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Work%20Id/splash.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatefulWidget {
@@ -98,7 +98,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         ),
                       ),
                       SizedBox(
-                        width: 32,
+                        width: 10.0,
                       ),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(25),
@@ -192,7 +192,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         ),
                       ),
                       SizedBox(
-                        width: 32,
+                        width: 10,
                       ),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(25),
@@ -282,7 +282,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         ),
                       ),
                       SizedBox(
-                        width: 32,
+                        width: 10,
                       ),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(25),
