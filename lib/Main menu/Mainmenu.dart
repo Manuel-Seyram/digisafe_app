@@ -1,4 +1,10 @@
 import 'dart:ui';
+import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Drivers%20License/splash.dart';
+import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Health%20Insurance/splash.dart';
+import 'package:digisafe_app/Main%20menu/Main%20menu%20options/National%20Id/splash.dart';
+import 'package:digisafe_app/Main%20menu/Main%20menu%20options/Passport/splash.dart';
+import 'package:digisafe_app/Main%20menu/Voters%20Id/splash.dart';
+import 'package:digisafe_app/Main%20menu/Work%20Id/splash.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatefulWidget {
@@ -54,7 +60,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Splashid1()));
+                            },
                             child: Container(
                               height: 200,
                               width: 180,
@@ -94,7 +105,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Splashid2()));
+                            },
                             child: Container(
                               height: 200,
                               width: 180,
@@ -138,7 +154,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Splashid3()));
+                            },
                             child: Container(
                               height: 200,
                               width: 180,
@@ -178,7 +199,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Splashid4()));
+                            },
                             child: Container(
                               height: 200,
                               width: 180,
@@ -218,7 +244,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Splashid5()));
+                            },
                             child: Container(
                               height: 200,
                               width: 180,
@@ -258,7 +289,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                         child: BackdropFilter(
                           filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Splashid6()));
+                            },
                             child: Container(
                               height: 200,
                               width: 180,
