@@ -36,6 +36,7 @@ dev_dependencies:
   lottie: ^0.7.0+1
   google_fonts: ^0.2.0
   image_picker: 
+  flutter_speed_dial: ^4.4.0
   
 
 # For information on the generic Dart part of this file, see the
@@ -67,6 +68,7 @@ flutter:
     - assets/digisafe.json
     - assets/lf30_editor_znzfprgp.json
     - assets/camera.json
+    - assets/credit card.json
     - assets/passport.json
   #   - images/a_dot_ham.jpeg
 

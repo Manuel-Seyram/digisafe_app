@@ -29,6 +29,9 @@ class _SplashScreen2State extends State<SplashScreen2>
       resizeToAvoidBottomInset: true,
       body: Column(
         children: <Widget>[
+          SizedBox(
+            height: 40,
+          ),
           Text(
             "Welcome to DigiSafe, ",
             style: TextStyle(
