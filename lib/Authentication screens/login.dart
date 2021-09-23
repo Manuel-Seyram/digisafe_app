@@ -19,7 +19,7 @@ class _SignInScreenState extends State<SignInScreen> {
             decoration: BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: AssetImage('assets/newauth.jpg'))),
+                    image: AssetImage('assets/digisafeLogo.png'))),
           ),
           SizedBox(
             height: 20,

@@ -12,7 +12,17 @@ class CardsPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            _buildTitleSection(title: "Your Cards,"),
+            SizedBox(
+              height: 20.0,
+            ),
+            Text(
+              "Your Cards ",
+              style: TextStyle(
+                  fontSize: 30,
+                  fontFamily: 'Schyler',
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87),
+            ),
             _buildCard(
                 color: Color(0xFF090943),
                 surname: "",
@@ -46,29 +56,6 @@ class CardsPage extends StatelessWidget {
     );
   }
 
-  // Build the title section
-  Column _buildTitleSection({@required title}) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(right: 8.0, top: 100.0),
-          child: Text(
-            '$title',
-            style: TextStyle(
-                fontSize: 50,
-                fontWeight: FontWeight.w500,
-                fontFamily: 'Schyler',
-                color: Colors.white),
-          ),
-        ),
-        SizedBox(
-          height: 20.0,
-        )
-      ],
-    );
-  }
-
   // Build the cards widget
   Card _buildCard(
       {required Color color,
@@ -88,7 +75,7 @@ class CardsPage extends StatelessWidget {
       ),
       child: Container(
         height: 250,
-        padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 22.0),
+        //padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 22.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

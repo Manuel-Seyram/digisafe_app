@@ -30,12 +30,12 @@ class _SplashScreenState extends State<SplashScreen>
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 20.0,
+            height: 10.0,
           ),
           Lottie.asset(
             'assets/digisafe.json',
             controller: _controller,
-            //height: MediaQuery.of(context).size.height * 1,
+            // height: MediaQuery.of(context).size.height,
             animate: true,
             onLoaded: (composition) {
               _controller
@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen>
             },
           ),
           SizedBox(
-            height: 20.0,
+            height: 100.0,
           ),
           Text(
             "DigiSafe",

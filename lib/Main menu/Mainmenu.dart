@@ -19,7 +19,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: Stack(
         children: <Widget>[
           Container(
@@ -41,7 +41,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                           fontSize: 30,
                           fontFamily: 'Schyler',
                           fontWeight: FontWeight.bold,
-                          color: Colors.white60),
+                          color: Colors.black87),
                     ),
                     SizedBox(
                       height: 8,
@@ -51,7 +51,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                       "your new card",
                       style: TextStyle(
                         fontSize: 15,
-                        color: Colors.white,
+                        color: Colors.black,
                         fontFamily: 'Schyler',
                       ),
                     ),
@@ -72,11 +72,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                         builder: (context) => Splashid1()));
                               },
                               child: Container(
-                                height: 200,
-                                width: 180,
+                                height: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(25),
-                                    color: Color(0xff8E8FC9).withOpacity(0.0)),
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: Colors.lightBlueAccent
+                                        .withOpacity(1.0)),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
@@ -94,7 +95,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                           fontSize: 15,
                                           fontFamily: 'Schyler',
                                           fontWeight: FontWeight.w600,
-                                          color: Color(0xff289FF3)),
+                                          color: Colors.white),
                                     ),
                                   ],
                                 ),
@@ -117,11 +118,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                         builder: (context) => Splashid2()));
                               },
                               child: Container(
-                                height: 200,
-                                width: 180,
+                                height: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(25),
-                                    color: Color(0xff8E8FC9).withOpacity(0.0)),
+                                    borderRadius: BorderRadius.circular(30),
+                                    color:
+                                        Colors.green.shade400.withOpacity(1.0)),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
@@ -139,7 +141,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                           fontSize: 15,
                                           fontFamily: 'Schyler',
                                           fontWeight: FontWeight.w600,
-                                          color: Color(0xff7B52FE)),
+                                          color: Colors.white),
                                     ),
                                   ],
                                 ),
@@ -166,18 +168,18 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                         builder: (context) => Splashid3()));
                               },
                               child: Container(
-                                height: 200,
-                                width: 180,
+                                height: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(25),
-                                    color: Color(0xff8E8FC9).withOpacity(0.0)),
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: Colors.redAccent.withOpacity(1.0)),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Image.asset(
                                       "assets/nationaliD.png",
-                                      height: 60.0,
-                                      width: 60.0,
+                                      height: 80.0,
+                                      width: 80.0,
                                     ),
                                     SizedBox(
                                       height: 30,
@@ -188,7 +190,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                           fontSize: 15,
                                           fontFamily: 'Schyler',
                                           fontWeight: FontWeight.w600,
-                                          color: Color(0xffFF44DE)),
+                                          color: Colors.white),
                                     ),
                                   ],
                                 ),
@@ -211,11 +213,11 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                         builder: (context) => Splashid4()));
                               },
                               child: Container(
-                                height: 200,
-                                width: 180,
+                                height: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(25),
-                                    color: Color(0xff8E8FC9).withOpacity(0.0)),
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: Colors.pinkAccent.withOpacity(1.0)),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
@@ -229,7 +231,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                           fontSize: 15,
                                           fontFamily: 'Schyler',
                                           fontWeight: FontWeight.w600,
-                                          color: Color(0xffFF8D45)),
+                                          color: Colors.white),
                                     ),
                                   ],
                                 ),
@@ -256,18 +258,19 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                         builder: (context) => Splashid5()));
                               },
                               child: Container(
-                                height: 200,
-                                width: 180,
+                                height: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(25),
-                                    color: Color(0xff8E8FC9).withOpacity(0.0)),
+                                    borderRadius: BorderRadius.circular(30),
+                                    color:
+                                        Colors.indigoAccent.withOpacity(1.0)),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Image.asset(
                                       "assets/voters.png",
-                                      height: 50.0,
-                                      width: 50.0,
+                                      height: 70.0,
+                                      width: 70.0,
                                     ),
                                     SizedBox(
                                       height: 30,
@@ -278,7 +281,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                           fontSize: 15,
                                           fontFamily: 'Schyler',
                                           fontWeight: FontWeight.w600,
-                                          color: Color(0xffFF4D4D)),
+                                          color: Colors.white),
                                     ),
                                   ],
                                 ),
@@ -301,11 +304,12 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                         builder: (context) => Splashid6()));
                               },
                               child: Container(
-                                height: 200,
-                                width: 180,
+                                height: 180,
+                                width: 150,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(25),
-                                    color: Color(0xff8E8FC9).withOpacity(0.0)),
+                                    borderRadius: BorderRadius.circular(30),
+                                    color:
+                                        Colors.orangeAccent.withOpacity(1.0)),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
@@ -323,7 +327,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin {
                                           fontSize: 15,
                                           fontFamily: 'Schyler',
                                           fontWeight: FontWeight.w600,
-                                          color: Color(0xff1DCA4D)),
+                                          color: Colors.white),
                                     ),
                                   ],
                                 ),

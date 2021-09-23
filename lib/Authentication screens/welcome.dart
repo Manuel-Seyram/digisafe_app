@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/avatarwelcome.jpg"))),
+                        image: AssetImage("assets/digisafeLogo.png"))),
               ),
               Column(
                 children: <Widget>[

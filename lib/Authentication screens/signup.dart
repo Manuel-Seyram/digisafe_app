@@ -122,7 +122,11 @@ class BackButtonWidget extends StatelessWidget {
       height: 200,
       decoration: BoxDecoration(
           image: DecorationImage(
-              fit: BoxFit.cover, image: AssetImage('assets/newauth.jpg'))),
+        fit: BoxFit.fitHeight,
+        image: AssetImage(
+          'assets/digisafeLogo.png',
+        ),
+      )),
       child: Positioned(
           child: Stack(
         children: <Widget>[
@@ -149,13 +153,6 @@ class BackButtonWidget extends StatelessWidget {
             bottom: 20,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Create New Account',
-                style: TextStyle(
-                    color: Colors.black38,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18),
-              ),
             ),
           )
         ],
