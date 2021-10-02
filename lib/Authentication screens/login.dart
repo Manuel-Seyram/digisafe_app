@@ -1,5 +1,5 @@
 import 'package:digisafe_app/Authentication%20screens/signup.dart';
-import 'package:digisafe_app/homepage.dart';
+import 'package:digisafe_app/Home%20Page/screens/card_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -64,7 +64,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 child: RaisedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => CardsPage()));
+                        MaterialPageRoute(builder: (context) => CardScreen()));
                   },
                   color: Colors.blueAccent,
                   child: Text(
